@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Synchronizer</title>
+    <script src="/static/index.js" defer></script>
+    <link rel="stylesheet" href="/static/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="connection-lost inactive">
+        <p class="connection-lost__alert">Connection lost!</p>
+        <p class="connection-lost__description">
+          Sessions won't be updated. Reload this page
+        </p>
+      </div>
+      <table class="clients-table">
+        <thead class="clients-table__head">
+          <tr>
+            <th class="clients-table__cell clients-table__cell_header">
+              Session ID
+            </th>
+            <th class="clients-table__cell clients-table__cell_header">
+              Start time
+            </th>
+            <th class="clients-table__cell clients-table__cell_header">
+              Duration
+            </th>
+            <th
+              class="clients-table__cell clients-table__cell_header clients-table__cell__address"
+            >
+              Address
+            </th>
+            <th class="clients-table__cell clients-table__cell_header">
+              User-Agent
+            </th>
+          </tr>
+        </thead>
+        <tbody class="clients-table__body"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
